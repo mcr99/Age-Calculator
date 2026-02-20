@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Age Calculator</title>
   </head>
-  <body>
+  <body class="bg-grey100 flex justify-center items-center h-screen">
+    <main class="bg-white rounded-2xl rounded-br-[100px] shadow-[0px_0px_5px_1px_#f0f0f0] flex flex-col items-center sm:w-100">
+      <div class="flex gap-4 my-10 px-1 sm:w-90">
+        <div>
+          <p class="text-xs font-bold text-grey500 pb-1 ml-2">DAY</p>
+          <input type="number" name="day" min="1" max="31" placeholder="DD" class="border border-grey200 rounded-md py-2 px-3 ml-2 font-bold ">
+        </div>
+        <div>
+          <p class="text-xs font-bold text-grey500 pb-1">MONTH</p>
+          <input type="number" name="month" min="1" max="12" placeholder="MM" class="border border-grey200 rounded-md py-2 px-4 font-bold">
+        </div>
+        <div>
+          <p class="text-xs font-bold text-grey500 pb-1">YEAR</p>
+          <input type="number" name="year" min="1" max="2500" placeholder="YYYY" class="border border-grey200 rounded-md py-2 px-2 mr-2 font-bold">
+        </div>
+      </div>
+      <div class="relative flex justify-center items-center mb-10 sm:justify-end ">
+        <div class="text-grey200"><span class="hidden sm:inline-block">—————</span>—————————————————</div>
+        <img src="./assets/images/icon-arrow.svg" alt="arrow" loading="lazy" class="bg-purple rounded-full p-2 w-10 absolute">
+      </div>
+      <div class="flex flex-col justify-center sm:w-90 sm:pl-2">
+        <div class="flex my-2  gap-2">
+          <span class="text-purple font-bold text-5xl">- -</span>
+          <p class="text-black font-bold text-5xl">years</p>
+        </div>
+        <div class="flex my-2 gap-2">
+          <span class="text-purple font-bold text-5xl">- -</span>
+          <p class="text-black font-bold text-5xl">months</p>
+        </div>
+        <div class="flex my-2 gap-2 mb-10">
+          <span class="text-purple font-bold text-5xl">- -</span>
+          <p class="text-black font-bold text-5xl">day</p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
